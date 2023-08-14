@@ -1,0 +1,141 @@
+/* @media (min-width: 481px) and (max-width: 821px)  */
+@media (min-width: 490px) and (max-width: 1250px) {
+
+
+
+    .notes-container1 {
+        display: none;
+    }
+
+    .double-input-con {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .blue-output {
+        height: auto;
+        border-radius: 20px 400px 400px 20px;
+        background: linear-gradient(90deg, #345FF6 0%, #587DFF 100%);
+    }
+
+    .inner-output {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .output-text-2 {
+        width: 60%;
+    }
+
+    .output-text-container {
+        width: 40%;
+    }
+
+    .sub-radio-container {
+        width: 100%;
+    }
+
+     .bmi-main {
+        margin-top: -220px;
+    } 
+
+    /* .bmi-main{
+        margin-top: 0;
+    } */
+
+    .input-container-1 {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .header-title {
+
+        margin: auto;
+        margin: 10px 25px 15px 20px;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    .hidden-input-con2 {
+        display: none;
+    }
+
+
+    .advice-container {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .individual-advice-container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .bmi-notes-section {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .bmi-detail-notes-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    #individual-detailed-notes-container {
+        max-width: 220px;
+        /* padding: 32px; */
+      }
+
+
+    .img-text-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .img-con {
+        width: 49%;
+        margin-top: 20px;
+        align-self: stretch;
+        align-self: center;
+        margin-left: -60px;
+    }
+
+    .text-below-image {
+        width: 49%;
+        margin-top: 20px;
+        align-self: stretch;
+        margin-bottom: 65px;
+    }
+
+    .img-text-container {
+        margin-top: 40px;
+    }
+
+    .curved-line {
+        display: none;
+    }
+
+    .curved-line2 {
+
+        display: none;
+    }
+
+}
+
+
+/* ----------------------------- */

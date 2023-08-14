@@ -1,0 +1,338 @@
+
+/* @media (min-width: 821px)  */
+@media (min-width: 1251px) {
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 90%;
+        height: 737px;
+        margin-left: 0px;
+        /* background-color: green; */
+    }
+
+    .gradient-background {
+        width: 95%;
+        height: 737px;
+        padding: 40px;
+        /* border-bottom-left-radius: 0px; */
+    }
+
+    .header-container {
+        width: 80%;
+        margin-top: 80px;
+        margin-left: -10px;
+        padding-left: 100px;
+    }
+
+     .logo{
+        justify-self: left;
+        margin-top: -140px;
+    margin-bottom: 90px;
+        width: 100%;
+        text-align: left;
+    } 
+
+    .header-title {
+        color: var(--gunmetal, #253347);
+        font-family: Inter;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%;
+        letter-spacing: -2.2px;
+        text-align: left;
+        /* padding-left: -20px; */
+        width: 100%;
+        
+    }
+
+    .header-and-logo{
+        /* display: block; */
+        align-content: left;
+        width: 450px;
+        height: auto;
+        margin-left: 90px;
+        /* background-color: red; */
+    }
+
+    .header-message{
+        width: 100%;
+text-align: left;
+    }   
+
+    
+
+    .empty-output-paragraph {
+        color: var(--pure-white, #FFF);
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        align-self: stretch;
+
+    }
+
+    .Welcome {
+        color: var(--pure-white, #FFF);
+        /* Heading M */
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -1.2px;
+    }
+
+
+    .hidden-input-con2 {
+        display: none;
+    } 
+
+
+    /* bmi-for-desktop-styling */
+
+
+    .input-container-1 {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+
+    .blue-output {
+        height: auto;
+        border-radius: 20px 400px 400px 20px;
+        background: linear-gradient(90deg, #345FF6 0%, #587DFF 100%);
+    }
+
+    .inner-output {
+        display: flex;
+        flex-direction: row;
+        /* width: 100%; */
+        display: none;
+    }
+
+    .output-empty {
+        display: block;
+    }
+
+    .output-text-2 {
+        width: 60%;
+    }
+
+    .output-text-container {
+        width: 40%;
+    }
+
+    .sub-radio-container {
+        width: 100%;
+        /* padding-left: -120px; */
+    }
+
+    .bmi-main {
+        margin-top: 100px;
+        width: 45%;
+        /* height: 480px; */
+        height: auto;
+        margin-left: -210px;
+        margin-top: 150px;
+
+    }
+
+    .bmi-notes-section {
+        display: block;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10px;
+
+    }
+
+    .limitation-and-gender-con {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin: 5px 200px 5px 40px;
+    }
+
+    .age-and-muscle-con {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        /* gap: 270px; */
+    }
+
+    .preg-and-race-con {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 0px 100px 10px 100px;
+    }
+
+    
+    .bmi-detail-notes-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* gap: 30px; */
+    }
+    #individual-detailed-notes-container {
+        max-width: 450px;
+        /* padding: 32px; */
+        padding: 32px;
+        margin: 20px;
+      }
+
+    .notes-container {
+        display: none;
+    }
+
+    .notes-container1 {
+        display: block;
+        width: 45%;
+        margin: 5px 60px 5px 0px;
+        padding: 0px 60px 50px 40px;
+    }
+
+
+
+    /* end----------bmi----------for---------desktop-styling */
+
+
+
+    .advice-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 50px;
+        /* padding-bottom: 20px; */
+
+    }
+
+    .individual-advice-container {
+        width: 24%;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        align-self: stretch;
+    }
+
+    .img-text-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 120px;
+    }
+
+    .img-con {
+        /* width: 470px; */
+        width: 42%;
+        height: auto;
+        margin-top: 20px;
+        /* align-self: stretch; */
+        align-self: center;
+        /* margin-left: -60px; */
+    }
+
+    .text-below-image {
+        /* background-color: #587DFF; */
+        width: 50%;
+        height: 533px;
+        margin-top: 30px;
+    } 
+
+    .bmiheader-and-message-container{
+        width: 100%;
+    }
+
+    .img-text-container {
+        width: 75%;
+        margin: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+      .curved-line {
+        margin-top: -50px;
+        display: flex;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+    }  
+
+
+    .curved-line2 {
+        /* margin: 0px 40px 20px 300px; */
+        /* margin-top: 0px; */
+        margin-left: 400px;
+        margin-right: 100px;
+        margin-bottom: 30px;
+        display: flex;
+        /* background-color: green; */
+        /* min-width: 250px; */
+        /* min-width: 600px; */
+        flex-direction: row-reverse;
+        
+    }
+
+    .left-curved{
+        background-color: red;
+        width: 94px;
+        /* width: 60%; */
+        height: 122px;
+        margin-top: -100px;
+    }
+
+    .notes-header {
+        text-align: left;
+    }
+
+    .notes-text {
+        text-align: left;
+        align-self: stretch;
+        color: var(--dark-electric-blue, #5E6E85);
+        /* Body M */
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+ 
+    #left-curved {
+        /* background-color: red; */
+        width: 85px; 
+        height: 170px;
+    } 
+
+    .bmi-detail-notes-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 15px;
+    }
+    #gender{
+        margin-right: 50px;
+    }
+    #individual-detailed-notes-container {
+        width: auto;
+        margin-top: 10px;
+        height: 232px;
+        align-self: stretch;
+    }
+
+
+}
