@@ -120,6 +120,8 @@ text-align: left;
 
     .output-text-2 {
         width: 50%;
+        
+
     }
 
     .output-text-container {
@@ -183,7 +185,6 @@ text-align: left;
     }
     #individual-detailed-notes-container {
         max-width: 450px;
-        /* padding: 32px; */
         padding: 32px;
         margin: 20px;
       }
