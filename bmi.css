@@ -37,15 +37,12 @@ body {
 
     text-align: center;
     margin-bottom: 25px;
-    /* background-color: yellow; */
     width: 100%;
     
 
 }
 
 .header-container {
-    /* background-color: lightgreen; */
-    /* width: 100%; */
     margin: auto;
     padding-top: 80px;
 }
@@ -61,30 +58,23 @@ body {
     letter-spacing: -2.4px;
     width: 100%;
     margin: auto;
-    /* background-color: green; */
 
 }
 
 .header-and-logo{
     align-self: center;
-    /* width: 80%; */
-    width: 100%;
-    /* margin: auto; */
-    /* background-color: green;  */
+    width: 96%;
+    padding-left: 20px;
 }
 
 
 
 .header-message {
-    /* justify-content: center; */
     font-size: 16px;
     line-height: 150%;
-    /* width: 89%; */
     width: 100%;
-    /* height: auto; */
     font-weight: 400;
     font-style: normal;
-    /* margin: auto; */
     text-align: center;
     font-family: Inter;
     padding-top: 25px;
@@ -122,30 +112,28 @@ body {
 .input-container {
     padding-top: 6px;
     padding: 14px;
-    /* background-color: green; */
 
 }
 
 .radio-container {
     display: flex;
-    /* justify-content: center; */
-    align-items: left;
-    /* gap: 24px; */
+    align-items: center;
     margin-left: 5px;
     width: 98%;
     font-weight: 600;
 }
 
 .sub-radio-container {
-
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    padding-left: 10px;
 }
 
 
+
+
 input[type='radio'] {
-    margin-right: 18px;
+    margin-right: 10px;
     width: 31px;
     height: 31px;
     cursor: pointer;
@@ -156,7 +144,6 @@ input[type='radio'] {
 
 input[type='radio']:not(.active):hover {
     border: 1px solid blue;
-    /* border: 1px solid var(--blue); */
 }
 
 
@@ -182,23 +169,6 @@ input[type='radio'].active::after {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
-/* 
-.bmi-input-radio {
-    width: 31px;
-    height: 31px;
-    --webkit-appearance: none;
-    border-radius: 50%;
-    background: #345ff6;
-    border: 10px solid #d8def5;
-
-} */
-
-/* --------------- */
-
-
-/* -------------- */
-
 
 .blue-span-text {
     margin-left: -55px;
@@ -226,7 +196,6 @@ input[type='radio'].active::after {
 
 
 .metric-container {
-    /* background-color: rgb(165, 86, 239); */
     padding-top: 3px;
 }
 
@@ -244,14 +213,12 @@ input[type='radio'].active::after {
 
 .label-metric {
     color: var(--gunmetal, #253347);
-
     /* Body M (Bold) */
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
-    /* 24px */
 }
 
 
@@ -374,12 +341,11 @@ input[type='radio'].active::after {
     background-color: #345ff6;
     margin: auto;
     width: 95%;
-    height: 257px;
+    /* height: 257px; */
+    height: auto;
     border-radius: 16px;
     padding-top: 8px;
     margin-top: 5px;
-
-
     display: flex;
     padding: 32px;
     flex-direction: column;
@@ -390,16 +356,47 @@ input[type='radio'].active::after {
 }
 
 .inner-output {
-    /* padding: 24px 24px 24px 24px; */
+    
     margin: auto;
-    width: 90%;
+    width: 100%;
     color: white;
+    flex-direction: column;
+    display: none;
+    height: auto;
 
 }
+
+
 
 .output-empty {
-    display: none;
+    display: block;
 }
+
+
+.empty-output-paragraph {
+    color: var(--pure-white, #FFF);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    align-self: stretch;
+
+}
+
+.Welcome {
+    color: var(--pure-white, #FFF);
+    /* Heading M */
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;
+    /* display: block; */
+}
+
+
 
 .output-text-1 {
     font-size: 16px;
@@ -426,6 +423,8 @@ input[type='radio'].active::after {
     gap: 8px;
     align-self: stretch;
     color: white;
+
+    /* display: none; */
 }
 
 .output-text-2 {
@@ -435,13 +434,12 @@ input[type='radio'].active::after {
     margin-top: 24px;
 
     color: var(--pure-white, #FFF);
-
     /* Body S */
     font-family: Inter;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%;
+    line-height: 100%;
     /* 21px */
 }
 
@@ -529,10 +527,7 @@ section {
 
 }
 
-/* 
-.hidden-input-con2 {
-    display: none;
-} */
+
 
 #advice-icon-image {
     width: 100%;
@@ -655,7 +650,7 @@ section {
     }
 
     .bmi-main{
-        margin-top: -60px;
+        margin-top: -80px;
     }
 
     .gradient-background{

@@ -73,7 +73,7 @@
                     <div class="sub-radio-container">
                         <input type="radio" name="measurement" value="metric" id="bmi-input-radio1"
                             class="bmi-input-radio active" checked />
-                        <label for="bmi-input-radio1" class="label-metric" style="padding-left: 10px;">Metric</label>
+                        <label for="bmi-input-radio1" class="label-metric">Metric</label>
                     </div>
 
 
@@ -81,7 +81,7 @@
 
                         <input type="radio" name="measurement" value="imperial" id="bmi-input-radio2"
                             class="bmi-input-radio bmi-input-radio2" />
-                        <label for="bmi-input-radio2" class="label-metric" style="padding-left: 10px;">Imperial</label>
+                        <label for="bmi-input-radio2" class="label-metric">Imperial</label>
                     </div>
 
                 </div>
@@ -165,9 +165,9 @@
 
             <div class="blue-output">
                 <div class="inner-output" id="inner-output">
-                    <div class="output-text-container">
+                     <div class="output-text-container">
                         <div class="output-text-1" id="text-1">Your BMI is..</div>
-                        <div class="output-number" id="output-number">23.5</div>
+                        <div class="output-number" id="output-number"></div>
                     </div>
                     <div class="output-text-2">
                         <p>Your BMI suggests you're <span id="classification"></span>.
@@ -387,161 +387,140 @@
 </body>
 
 
-<script>
-    const form = document.getElementById('card');
-    const heightElement = document.getElementById('height-weight-input1');
-    const weightElement = document.getElementById('height-weight-input2');
-    const feetElement = document.getElementById('double-input1');
-    const inchElement = document.getElementById('double-input2');
-    const stonesElement = document.getElementById('double-input3');
-    const poundsElement = document.getElementById('double-input4');
-    const classification = document.getElementById('classification');
-    const minWeight = document.getElementById('min-weight');
-    const maxWeight = document.getElementById('max-weight');
-    const resultElement = document.getElementById('output-number');
-    const resultContainer = document.getElementById('blue-output');
-    const bmiResult = document.getElementById('inner-output');
-    const welcome = document.getElementById('welcome');
+<script src="./app.js">
+    // const form = document.getElementById('card');
+    // const heightElement = document.getElementById('height-weight-input1');
+    // const weightElement = document.getElementById('height-weight-input2');
+    // const feetElement = document.getElementById('double-input1');
+    // const inchElement = document.getElementById('double-input2');
+    // const stonesElement = document.getElementById('double-input3');
+    // const poundsElement = document.getElementById('double-input4');
+    // const classification = document.getElementById('classification');
+    // const minWeight = document.getElementById('min-weight');
+    // const maxWeight = document.getElementById('max-weight');
+    // const resultElement = document.getElementById('output-number');
+    // const resultContainer = document.getElementById('blue-output');
+    // const bmiResult = document.getElementById('inner-output');
+    // const welcome = document.getElementById('welcome');
 
-    const metricBtn = document.getElementById('bmi-input-radio1');
-    const imperialBtn = document.getElementById('bmi-input-radio2');
+    // const metricBtn = document.getElementById('bmi-input-radio1');
+    // const imperialBtn = document.getElementById('bmi-input-radio2');
 
+    // const radioBtns = document.querySelectorAll('input[type="radio"]');
+    // function calculateBmi(e) {
 
-    const radioBtns = document.querySelectorAll('input[type="radio"]');
+    //     if (metricBtn.classList.contains('active')) {
+    //         const height = heightElement.value;
+    //         const weight = weightElement.value;
 
-
-    function calculateBmi(e) {
-
-        if (metricBtn.classList.contains('active')) {
-            const height = heightElement.value;
-            const weight = weightElement.value;
-
-            bmiResult.style.display = 'flex';
-            welcome.style.display = 'none';
-
-
-            const bmi = ((weight / (height * height)) * 10000).toFixed(1);
-
-
-            const heightM = height / 100;
-
-
-            const min = (18.5 * heightM * heightM).toFixed(1);
-            const max = (24.9 * heightM * heightM).toFixed(1);
-
-
-            resultElement.innerText = bmi;
-
-
-            minWeight.innerText = `${min}kgs`;
-            maxWeight.innerText = `${max}kgs`;
-
-            if (bmi < 18.5) {
-
-                classification.innerText = 'Underweight';
-            } else if (bmi >= 18.5 && bmi <= 24.9) {
-                classification.innerText = 'Healthy weight';
-            } else if (bmi > 24.9 && bmi <= 29.9) {
-                classification.innerText = 'Overweight';
-            } else {
-                classification.innerText = 'Obese';
-            }
+    //         bmiResult.style.display = 'flex';
+    //         welcome.style.display = 'none';
+    //         const bmi = ((weight / (height * height)) * 10000).toFixed(1);
+    //         const heightM = height / 100;
+    //         const min = (18.5 * heightM * heightM).toFixed(1);
+    //         const max = (24.9 * heightM * heightM).toFixed(1);
+    //         resultElement.innerText = bmi;
+    //         minWeight.innerText = `${min}kgs`;
+    //         maxWeight.innerText = `${max}kgs`;
+    //         if (bmi < 18.5) {
+    //             classification.innerText = 'Underweight';
+    //         } else if (bmi >= 18.5 && bmi <= 24.9) {
+    //             classification.innerText = 'Healthy weight';
+    //         } else if (bmi > 24.9 && bmi <= 29.9) {
+    //             classification.innerText = 'Overweight';
+    //         } else {
+    //             classification.innerText = 'Obese';
+    //         }
 
             
-        } else {
+    //     } else {
             
-            const feet = parseInt(feetElement.value);
-            const inch = parseInt(inchElement.value);
-            const st = parseInt(stonesElement.value);
-            const lbs = parseInt(poundsElement.value);
+    //         const feet = parseInt(feetElement.value);
+    //         const inch = parseInt(inchElement.value);
+    //         const st = parseInt(stonesElement.value);
+    //         const lbs = parseInt(poundsElement.value);
 
-            bmiResult.style.display = 'flex';
-            welcome.style.display = 'none';
+    //         bmiResult.style.display = 'flex';
+    //         welcome.style.display = 'none';
 
-            const heightInInches = feet * 12 + inch;
-            const weightInPounds = st * 14 + lbs;
-            const bmi = (
-                (703 * weightInPounds) /
-                (heightInInches * heightInInches)
-            ).toFixed(1);
-            console.log(bmi);
+    //         const heightInInches = feet * 12 + inch;
+    //         const weightInPounds = st * 14 + lbs;
+    //         const bmi = (
+    //             (703 * weightInPounds) /
+    //             (heightInInches * heightInInches)
+    //         ).toFixed(1);
+    //         console.log(bmi);
 
-            resultElement.innerText = bmi
+    //         resultElement.innerText = bmi
 
-            const minOptimalWeightPounds =
-                (18.5 * (heightInInches * heightInInches)) / 703;
+    //         const minOptimalWeightPounds =
+    //             (18.5 * (heightInInches * heightInInches)) / 703;
 
-            const maxOptimalWeightPounds =
-                (24.9 * (heightInInches * heightInInches)) / 703;
+    //         const maxOptimalWeightPounds =
+    //             (24.9 * (heightInInches * heightInInches)) / 703;
 
-            const minWeightInStone = Math.floor(minOptimalWeightPounds / 14);
-            const minWeightInPounds = Math.floor(minOptimalWeightPounds % 14);
+    //         const minWeightInStone = Math.floor(minOptimalWeightPounds / 14);
+    //         const minWeightInPounds = Math.floor(minOptimalWeightPounds % 14);
 
-            const maxWeightInStone = Math.floor(maxOptimalWeightPounds / 14);
-            const maxWeightInPounds = Math.floor(maxOptimalWeightPounds % 14);
-            
-
+    //         const maxWeightInStone = Math.floor(maxOptimalWeightPounds / 14);
+    //         const maxWeightInPounds = Math.floor(maxOptimalWeightPounds % 14);
 
     
 
-            const optimalWeightValueInStone = Math.floor(
-                (minOptimalWeightPounds + maxOptimalWeightPounds) / 2 / 14
-            );
-            const optimalWeightValueInPounds = Math.floor(
-                ((minOptimalWeightPounds + maxOptimalWeightPounds) / 2) % 14
-            );
+    //         const optimalWeightValueInStone = Math.floor(
+    //             (minOptimalWeightPounds + maxOptimalWeightPounds) / 2 / 14
+    //         );
+    //         const optimalWeightValueInPounds = Math.floor(
+    //             ((minOptimalWeightPounds + maxOptimalWeightPounds) / 2) % 14
+    //         );
 
-            minWeight.innerText = `${minWeightInStone}st ${minWeightInPounds}lbs`
-            maxWeight.innerText = `${maxWeightInStone}st ${maxWeightInPounds}lbs`
+    //         minWeight.innerText = `${minWeightInStone}st ${minWeightInPounds}lbs`
+    //         maxWeight.innerText = `${maxWeightInStone}st ${maxWeightInPounds}lbs`
 
-            if (bmi < 18.5) {
-                classification.innerText = 'Underweight';
-            } else if (bmi >= 18.5 && bmi <= 24.9) {
-                classification.innerText = 'Healthy weight';
-            } else if (bmi > 24.9 && bmi <= 29.9) {
-                classification.innerText = 'Overweight';
-            } else {
-                classification.innerText = 'Obese';
-            }
-        }
+    //         if (bmi < 18.5) {
+    //             classification.innerText = 'Underweight';
+    //         } else if (bmi >= 18.5 && bmi <= 24.9) {
+    //             classification.innerText = 'Healthy weight';
+    //         } else if (bmi > 24.9 && bmi <= 29.9) {
+    //             classification.innerText = 'Overweight';
+    //         } else {
+    //             classification.innerText = 'Obese';
+    //         }
+    //     }
 
+    // }
 
+    // radioBtns.forEach((btn) => {
+    //     btn.addEventListener('click', (e) => {
 
-
-
-    }
-
-    radioBtns.forEach((btn) => {
-        btn.addEventListener('click', (e) => {
-
-            if (e.target.value === 'imperial') {
-                document.querySelector('.input-container-1').style.display = 'none';
-                document.querySelector('.input-container-2').style.display = 'block';
-                e.target.classList.add('active');
-                metricBtn.classList.remove('active');
-            } else {
-                document.querySelector('.input-container-1').style.display = window.innerWidth < 480 ? 'block' : 'flex';
-                document.querySelector('.input-container-2').style.display = 'none';
-                imperialBtn.classList.remove('active');
-                e.target.classList.add('active');
-            }
-        })
-    })
+    //         if (e.target.value === 'imperial') {
+    //             document.querySelector('.input-container-1').style.display = 'none';
+    //             document.querySelector('.input-container-2').style.display = 'block';
+    //             e.target.classList.add('active');
+    //             metricBtn.classList.remove('active');
+    //         } else {
+    //             document.querySelector('.input-container-1').style.display = window.innerWidth < 480 ? 'block' : 'flex';
+    //             document.querySelector('.input-container-2').style.display = 'none';
+    //             imperialBtn.classList.remove('active');
+    //             e.target.classList.add('active');
+    //         }
+    //     })
+    // })
 
 
     
-    form.addEventListener('keydown', (e) => {
-        if (
-            (e.key === 'Enter' && heightElement.value !== '' && weightElement.value !== '') ||
-            (e.key === 'Enter' &&
-                feetElement.value !== '' &&
-                ((inchElement.value !== '') !== stonesElement.value) !== '' &&
-                poundsElement.value !== '')
-        ) {
-            e.preventDefault();
-            calculateBmi();
-        }
-    });
+    // form.addEventListener('keydown', (e) => {
+    //     if (
+    //         (e.key === 'Enter' && heightElement.value !== '' && weightElement.value !== '') ||
+    //         (e.key === 'Enter' &&
+    //             feetElement.value !== '' &&
+    //             ((inchElement.value !== '') !== stonesElement.value) !== '' &&
+    //             poundsElement.value !== '')
+    //     ) {
+    //         e.preventDefault();
+    //         calculateBmi();
+    //     }
+    // });
 
 
 

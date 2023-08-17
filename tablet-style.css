@@ -21,8 +21,8 @@
     }
 
     .inner-output {
-        display: flex;
         flex-direction: row;
+        display: none;
     }
 
     .output-text-2 {
@@ -31,6 +31,7 @@
 
     .output-text-container {
         width: 40%;
+        display: display;
     }
 
     .sub-radio-container {
@@ -40,10 +41,10 @@
      .bmi-main {
         margin-top: -220px;
     } 
-
-    /* .bmi-main{
-        margin-top: 0;
-    } */
+    input[type='radio']:not(.active):hover {
+        border: 1px solid blue;
+    }
+    
 
     .input-container-1 {
         display: flex;
@@ -93,6 +94,36 @@
         flex-wrap: wrap;
         gap: 15px;
     }
+
+    .output-empty {
+        display: block;
+    }   
+    
+    .empty-output-paragraph {
+        color: var(--pure-white, #FFF);
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        align-self: stretch;   
+    }
+    
+    .Welcome {
+        color: var(--pure-white, #FFF);
+        /* Heading M */
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -1.2px;
+        /* display: block; */
+    }
+    
+
+
+
     #individual-detailed-notes-container {
         max-width: 220px;
         /* padding: 32px; */
