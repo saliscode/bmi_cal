@@ -581,10 +581,12 @@ box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
 padding: 32px;
 margin-bottom: 20px;
 grid-column: span 12;
+/* margin: 0px 29px 0px 19px ; */
 }
 
 .limitations-container{
-    width: 100%;    
+    width: 92%;
+    margin: 0px 29px 0px 23px ;
 }
 
 .no-display{
@@ -616,6 +618,11 @@ grid-column: span 12;
 
     .gradient-background {
         height: 700px;
+    }
+
+    .limitations-container{
+        width: 90%;
+        margin: 0px 29px 0px 23px ;
     }
 
 }
