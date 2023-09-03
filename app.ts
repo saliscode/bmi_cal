@@ -6,12 +6,12 @@ const inchElement1 = document.getElementById('double-input2') as HTMLInputElemen
 const stonesElement1 = document.getElementById('double-input3') as HTMLInputElement;
 const poundsElement1 = document.getElementById('double-input4') as HTMLInputElement;
 const classification1 = document.getElementById('classification') as HTMLElement;
-const minWeight1 = document.getElementById('min-weight') as HTMLElement;
-const maxWeight1 = document.getElementById('max-weight') as HTMLElement;
-const resultElement1 = document.getElementById('output-number') as HTMLElement;
+const minWeight1 = document.getElementById('min-weight') as HTMLOutputElement;
+const maxWeight1 = document.getElementById('max-weight') as HTMLOutputElement;
+const resultElement1 = document.getElementById('output-number') as HTMLOutputElement;
 const resultContainer1 = document.getElementById('blue-output') as HTMLElement;
-const bmiResult1 = document.getElementById('inner-output') as HTMLElement;
-const welcome1 = document.getElementById('welcome') as HTMLElement;
+const bmiResult1 = document.getElementById('inner-output') as HTMLOutputElement;
+const welcome1 = document.getElementById('welcome') as HTMLOutputElement;
 
 const metricBtn1 = document.getElementById('bmi-input-radio1') as HTMLInputElement;
 const imperialBtn1 = document.getElementById('bmi-input-radio2') as HTMLInputElement;
@@ -20,15 +20,15 @@ const radioBtns1 = document.querySelectorAll<HTMLInputElement>('input[type="radi
 
 function calculateBmi(e?: Event) {
     if (metricBtn1.classList.contains('active')) {
-        const height = parseFloat(heightElement1.value);
-        const weight = parseFloat(weightElement1.value);
+        const height: number = parseFloat(heightElement1.value);
+        const weight: number = parseFloat(weightElement1.value);
 
         bmiResult1.style.display = 'flex';
         welcome1.style.display = 'none';
 
         const bmi = ((weight / (height * height)) * 10000).toFixed(1);
 
-        const heightM = height / 100;
+        const heightM: number = height / 100;
 
         const min = (18.5 * heightM * heightM).toFixed(1);
         const max = (24.9 * heightM * heightM).toFixed(1);
