@@ -1,16 +1,17 @@
 # bmi_cal
-An online BMI calculator within typescript/javascript
+An online BMI calculator with few notes on healthy living worth reading.
 
 ## General info
 This is the third project which is part of the assessment for trainees in the Amalitech Graduate Trainee Program.
 It is a simple web application that can calculate the body mass index of a user, by providing your height and weight. 
+
 To use this application one must first know his/her height in centimeters and weight in kilograms for the metric system, however if you want to use the 
 imperial system, you should know before hand your height in feet and inches and also your weight in stones and pounds.
 
 the live site is deployed on Netlify and can be accessed here: https://stately-bublanina-c46481.netlify.app/
 
 
-Simply, 
+# How to Use this application
 1) choose your preffered system.
 2) enter your weight and height in their required units.
 3) press enter.
