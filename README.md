@@ -3,11 +3,12 @@ An online BMI calculator within typescript/javascript
 
 ## General info
 This is the third project which is part of the assessment for trainees in the Amalitech Graduate Trainee Program.
-It is a simple web application that can calculate the body mass index of a user, provider you input your height and weight. 
-This site utilises values from both the metric system as well as the imperial system, meaning it accepts height values in eighter
-cm or feet and inches. Similarly the weight accepts values in eighter kilograms or stones and pounds.
+It is a simple web application that can calculate the body mass index of a user, by providing your height and weight. 
+To use this application one must first know his/her height in centimeters and weight in kilograms for the metric system, however if you want to use the 
+imperial system, you should know before hand your height in feet and inches and also your weight in stones and pounds.
 
-the live site can be viewed here => https://beamish-souffle-e4588e.netlify.app/
+the live site is deployed on Netlify and can be accessed here: https://stately-bublanina-c46481.netlify.app/
+
 
 Simply, 
 1) choose your preffered system.
@@ -33,7 +34,7 @@ This project was created using:
 
 
 ## Directories/Files
-### project_1:
+### BMI-CAL:
 * index.html
 * app.js
 * app.ts
@@ -42,5 +43,11 @@ This project was created using:
  -this contains all images used in this project.
 *design
  -This file contains all design files which served as a guide in creating this project.
+
+# Beyond
+In the near future I hope to write tests to make sure it works effiently
+
+
+  
  
 
