@@ -67,16 +67,7 @@
 
     }
 
-    .Welcome {
-        color: var(--pure-white, #FFF);
-        /* Heading M */
-        font-family: Inter;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        letter-spacing: -1.2px;
-    }
+
 
 
     .hidden-input-con2 {
@@ -105,9 +96,9 @@
         display: none;
     }
 
-    .output-empty {
+    /* .output-empty {
         display: block;
-    }
+    } */
 
     .output-text-2 {
         width: 50%;
@@ -121,6 +112,7 @@
 
     .sub-radio-container {
         width: 100%;
+        
     }
 
     .bmi-main {

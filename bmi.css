@@ -1,5 +1,5 @@
 
-@import "tablet-style.css" screen and (min-width: 490px) and (max-width: 1200px);
+@import "tablet-style.css" screen and (min-width: 425px) and (max-width: 1200px);
 @import "desktop-style.css" screen and (min-width: 1201px);
 
 html,
@@ -110,18 +110,21 @@ body {
 }
 
 .radio-container {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    margin-left: 5px;
-    width: 98%;
+    margin-left: 5px; */
+    /* width: 98%; */
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     font-weight: 600;
 }
 
-.sub-radio-container {
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
+.sub-radio-container{
+    grid-column: span 6;
 }
+
+
 
 input[type='radio'] {
     margin-right: 10px;
@@ -581,7 +584,6 @@ box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
 padding: 32px;
 margin-bottom: 20px;
 grid-column: span 12;
-/* margin: 0px 29px 0px 19px ; */
 }
 
 .limitations-container{
@@ -606,14 +608,14 @@ grid-column: span 12;
 
 /* Media query for Laptops and Desktops */
 
-@media (max-width: 489px) {
+@media (max-width: 375px) {
 
     .radio-container {
         display: block;
     }
 
     .bmi-main {
-        margin-top: -80px;
+        margin-top: -130px;
     }
 
     .gradient-background {
@@ -622,7 +624,7 @@ grid-column: span 12;
 
     .limitations-container{
         width: 90%;
-        margin: 0px 29px 0px 23px ;
+        margin: 0px 29px 0px 19px ;
     }
 
 }

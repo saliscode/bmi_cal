@@ -1,4 +1,4 @@
-@media (min-width: 490px) and (max-width: 1200px){
+@media (min-width: 425px) and (max-width: 1200px){
 
     .double-input-con {
         width: 100%;
@@ -29,6 +29,16 @@
 
     .sub-radio-container {
         width: 100%;
+    }
+
+    #height-weight-input1:hover {
+        border: 1px solid blue;
+        cursor: pointer;
+    }
+    
+    #height-weight-input2:hover {
+        border: 1px solid blue;
+        cursor: pointer;
     }
 
      .bmi-main {
@@ -123,10 +133,10 @@
     .no-display{
         display: none;
     }     
-
+/* 
     .output-empty {
         display: block;
-    }   
+    }    */
     
     .empty-output-paragraph {
         color: var(--pure-white, #FFF);
@@ -138,17 +148,7 @@
         align-self: stretch;   
     }
     
-    .Welcome {
-        color: var(--pure-white, #FFF);
-        /* Heading M */
-        font-family: Inter;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        letter-spacing: -1.2px;
-        /* display: block; */
-    }
+    
     
  .advice-image{ 
     width: 64px;
